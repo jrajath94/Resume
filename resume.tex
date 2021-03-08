@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+
+
+  
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small\justifying{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5 pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------------- 
+\begin{tabular*}{\textwidth\raggedright}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/rajathj/}{\Large Rajath John Bosco}} & Email : \href{mailto:rajathj2@illinois.edu}{rajathj2@illinois.edu}\\ 
+  \href{https://www.linkedin.com/in/rajathj/}{\faLinkedin \hspace{0.5pt} - rajathj} \hspace{2pt}
+  \href{https://www.github.com/jrajath94/}{\faGithub \hspace{0.5pt} - jrajath94} \hspace{2pt}
+  \href{http://rajathj2.web.illinois.edu/} {\faGlobe \hspace{0.5pt} - rajathj2.web.illinois.edu} & Mobile   :   +1-217-819-9805 \\
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeSubheading
+      {University of Illinois at Urbana-Champaign}{Champaign, IL}
+      {Master of Science in Information Management. CGPA - 3.74/4.0.}{Aug. 2019 -- Expected May 2021}
+      
+    \resumeSubheading
+      {Sri Jayachamarajendra College of Engineering}{Mysore, India}
+      {Bachelor of Engineering in Computer Science and Engineering.}{Aug. 2012 -- July. 2016}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+ \resumeSubheading
+ {Nvidia}{Austin, TX}
+ {Software Engineering Intern - Product Security}{May 2020 - August 2020}
+\resumeItemListStart
+\resumeItem {GeForce Now}
+ {Developed a pipeline in AWS (Lambda, S3, SNS, SQS) to fetch Information Security reports from Lacework API, Vault API and obtained crucial insights using analytics in Splunk.}
+ \resumeItem {Cost Metering Service}
+ {Devised a model using Python and Splunk to meter and predict costs of various services/ components offered by Product Security, calculated cost per unit/event/GB and allocated them to different Programs.}
+ \resumeItem {Rapids AI}
+ {
+ Detected possible threats in Network logs by harnessing the power of GPU's through Rapids AI framework. 
+ }
+ \resumeItemListEnd
+
+
+ \resumeSubheading
+      {Visa Inc}{Bangalore, India}
+      {Systems Analyst (Developer) - Visa AI Platform, Verified By Visa, Apple Pay }{July 2016 - Aug 2019}
+      \resumeItemListStart
+      
+        \resumeItem {Visa AI Platform }{Developed scripts in Python and Shell to perform overall system health-check, check connectivity,  certificates and worked on CI/CD pipeline with Jenkins.
+        Increased productivity by 50\% by deploying Python scripts to oversee the purging of log files containing 3+ Million transactions in HDFS to train Machine Learning models.} 
+        
+        \resumeItem{Verified By Visa }{Developed optimized SQL queries to analyze 20+ million transactions to identify sales patterns, anomalies and used Python to generate reports to monitor performance in realtime. }
+        \resumeItem{Tokenization (Apple Pay, Android Pay etc.)} {Developed administrative consoles in Python to trace requests from critical REST API Services across linux servers and networking devices. }
+        \resumeItem{Splunk} {Queried machine-generated Big Data  to extract key metrics, devised automatic alert mechanisms and visualized transaction data to  derive key insights to drive business efficiency.
+        }
+        \resumeItem{Achievements}  {Received 19 "Go Beyond" - Corporate recognition for achieving crucial  milestones. Promoted from Associate System Analyst to Systems Analyst on Dec 2018.}
+        
+      \resumeItemListEnd
+      
+     \resumeSubheading
+ {Gies College of Business}{Champaign, IL}
+ {Course Assistant}{October 2019 - Present}
+\resumeItemListStart
+\resumeItem {iMBA}
+ {Graded assignments in Python/R and handled live sessions to a class of 200+ students using  Asana \& Zoom.}
+ \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+\resumeSubItem{Olympics Analysis (1896-2016)}
+{Predicted the medal tally of a country using supervised learning models in Python with an accuracy of 92\%. Demonstrated Test-Driven Development and Continuous Integration using Travis CI.}
+         
+\resumeSubItem{Predicting Solar Radiation}
+{Developed multiple supervised learning models to predict solar radiations based on enriched meteorological data in R. }
+
+\resumeSubItem{Urban Land Cover}
+{
+Classified the Urban Aerial Images into different types of covers using XGBoost, Random forest by selecting highly correlated features from Shap Algorithm. 
+}
+
+\resumeSubItem{American Community Survey}
+{Predicted the median household income of American families using supervised Learning models in Python, visualised important factors using Plotly and deployed it using Heroku and Voila.}
+
+\resumeItem{Merchant Locator Chatbot}{Finished 2nd among 125 teams by building a chatbot to call Visa's Merchant Locator API \& retrieve merchant data  to help people in distress find nearest available services.}
+
+%--------PROGRAMMING SKILLS------------
+
+\resumeSubHeadingListEnd
+%
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}
+   {Python, Java, SQL, Shell, C++, R, HTML, CSS, Javascript.} 
+      \resumeSubItem{Technologies}
+      {Docker, Soap UI, Jenkins, Jira, Splunk, Git, REST API, AWS, GCP,Hadoop}
+     \resumeSubItem {Familiar}{TensorFlow, Pytorch, Spark, Kafka, Hive, MongoDb, Redis, Node.js, Angular, MySQL, Kubernetes, Azure.}
+     \resumeSubItem{Relevant Coursework}{ Advanced Data Structures and Algorithms, Software Engineering, DBMS, Computer Networks, Deep Learning, Health Informatics, Programming Analytics, Machine Learning, Usability Engineering.}
+ \resumeSubHeadingListEnd
+
+
+\end{document}
